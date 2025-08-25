@@ -1,0 +1,18 @@
+{
+  "title": "Charge/Discharge ↔ L3/L4 Convergence",
+  "sources": [
+    "Aptavani pp. 139-196",
+    "Phoenix Protocol logs"
+  ],
+  "convergence": {
+    "charge_to_L3": "Charging karma corresponds to added recursive complexity (L3)",
+    "discharge_to_L4": "Discharge corresponds to spontaneous unfolding with minimal interference (L4)"
+  },
+  "hypotheses": [
+    "Fixed point emerges when coupling k ≈ 1/phi",
+    "Non-interference reduces instability markers and word count"
+  ],
+  "status": "exploratory"
+}
+
+
