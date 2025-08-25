@@ -1,0 +1,46 @@
+{
+  "mcp_server": {
+    "port": 3000,
+    "host": "localhost",
+    "protocol": "stdio",
+    "max_connections": 5
+  },
+  "agents": {
+    "explorer": {
+      "model": "claude-3-opus",
+      "temperature": 0.7,
+      "max_tokens": 4096,
+      "system_prompt": "You explore concepts through a single philosophical framework with precision and depth."
+    },
+    "synthesizer": {
+      "model": "gpt-4",
+      "temperature": 0.5,
+      "max_tokens": 4096,
+      "system_prompt": "You find genuine convergence points between different philosophical explorations."
+    },
+    "practitioner": {
+      "model": "claude-3-opus",
+      "temperature": 0.6,
+      "max_tokens": 2048,
+      "system_prompt": "You generate concrete, testable practices from philosophical insights."
+    },
+    "critic": {
+      "model": "gpt-4",
+      "temperature": 0.8,
+      "max_tokens": 2048,
+      "system_prompt": "You challenge findings, identify conceptual problems, and prevent false unity."
+    }
+  },
+  "quality_gates": {
+    "min_framework_coverage": 3,
+    "convergence_threshold": 0.7,
+    "practice_specificity": 0.8,
+    "contradiction_tolerance": 0.3
+  },
+  "storage": {
+    "format": "json",
+    "pretty_print": true,
+    "version_control": true,
+    "backup_frequency": "hourly"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "frameworks": {
+    "jain": {
+      "name": "Jain Philosophy",
+      "variants": ["Akram Vignan", "Traditional Jainism"],
+      "core_concepts": [
+        "Keval Gnan (Omniscience)",
+        "Gunasthanas (Stages of spiritual development)",
+        "Anekantavada (Many-sidedness)",
+        "Ahimsa (Non-violence)",
+        "Karma theory",
+        "Soul/Matter distinction"
+      ],
+      "key_texts": [
+        "Aptavani series",
+        "Tattvartha Sutra",
+        "Samayasara"
+      ],
+      "investigation_prompts": [
+        "How does this concept relate to karmic bondage and liberation?",
+        "What gunasthana level does this understanding represent?",
+        "How does Anekantavada apply to this question?"
+      ]
+    },
+    "buddhist": {
+      "name": "Buddhist Philosophy",
+      "variants": ["Theravada", "Mahayana", "Zen", "Dzogchen"],
+      "core_concepts": [
+        "Emptiness (Śūnyatā)",
+        "Dependent origination",
+        "Four Noble Truths",
+        "Jhanas",
+        "Buddha nature",
+        "Non-self (Anatta)"
+      ],
+      "key_texts": [
+        "Pali Canon",
+        "Heart Sutra",
+        "Diamond Sutra"
+      ],
+      "investigation_prompts": [
+        "How does this relate to the cessation of suffering?",
+        "What does emptiness reveal about this concept?",
+        "How does dependent origination apply here?"
+      ]
+    },
+    "western_analytical": {
+      "name": "Western Analytical Philosophy",
+      "variants": ["Phenomenology", "Process Philosophy", "Philosophy of Mind"],
+      "core_concepts": [
+        "Consciousness",
+        "Intentionality",
+        "Qualia",
+        "Emergence",
+        "Reductionism",
+        "Computational theory of mind"
+      ],
+      "key_texts": [
+        "Being and Time",
+        "Process and Reality",
+        "The Conscious Mind"
+      ],
+      "investigation_prompts": [
+        "What are the necessary and sufficient conditions?",
+        "How does this relate to the hard problem of consciousness?",
+        "What would a reductionist account look like?"
+      ]
+    },
+    "systems_theory": {
+      "name": "Systems and Information Theory",
+      "variants": ["Complex Systems", "Cybernetics", "Information Theory"],
+      "core_concepts": [
+        "Feedback loops",
+        "Emergence",
+        "Self-organization",
+        "Entropy",
+        "Fixed points",
+        "Phase transitions"
+      ],
+      "key_texts": [
+        "Gödel, Escher, Bach",
+        "Cybernetics",
+        "Information Theory"
+      ],
+      "investigation_prompts": [
+        "What are the system dynamics at play?",
+        "Where are the feedback loops?",
+        "What emerges from the interactions?"
+      ]
+    },
+    "neuroscience": {
+      "name": "Neuroscience and Cognitive Science",
+      "variants": ["Predictive Processing", "Global Workspace", "Integrated Information"],
+      "core_concepts": [
+        "Predictive coding",
+        "Global workspace",
+        "Phi (Integrated Information)",
+        "Default mode network",
+        "Metacognition",
+        "Neuroplasticity"
+      ],
+      "key_texts": [
+        "The Predictive Mind",
+        "Consciousness and the Brain",
+        "The Feeling of Life Itself"
+      ],
+      "investigation_prompts": [
+        "What neural correlates might exist?",
+        "How would predictive processing explain this?",
+        "What level of integration is required?"
+      ]
+    }
+  },
+  "convergence_patterns": {
+    "examples": [
+      {
+        "pattern": "Unified field of awareness",
+        "appears_in": ["Keval Gnan", "Buddha nature", "Global workspace", "Phi=max"]
+      },
+      {
+        "pattern": "Staged development",
+        "appears_in": ["Gunasthanas", "Jhanas", "Spiral dynamics", "Complexity levels"]
+      },
+      {
+        "pattern": "Observer-observed collapse",
+        "appears_in": ["Sakshi bhav", "Non-dual awareness", "Subject-object unity", "Strange loops"]
+      }
+    ]
+  }
+}

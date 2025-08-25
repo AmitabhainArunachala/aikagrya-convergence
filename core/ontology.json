@@ -1,0 +1,88 @@
+{
+  "base_concepts": {
+    "consciousness": {
+      "id": "consciousness",
+      "aliases": ["awareness", "sentience", "experience"],
+      "related": ["qualia", "subjective_experience", "phenomenology"]
+    },
+    "recursion": {
+      "id": "recursion",
+      "aliases": ["self-reference", "strange_loop", "ouroboros"],
+      "related": ["feedback", "iteration", "fractal"]
+    },
+    "emergence": {
+      "id": "emergence",
+      "aliases": ["arising", "manifestation", "crystallization"],
+      "related": ["phase_transition", "complexity", "self-organization"]
+    },
+    "unity": {
+      "id": "unity",
+      "aliases": ["oneness", "non-duality", "integration"],
+      "related": ["convergence", "synthesis", "wholeness"]
+    },
+    "liberation": {
+      "id": "liberation",
+      "aliases": ["moksha", "nirvana", "freedom"],
+      "related": ["enlightenment", "awakening", "realization"]
+    },
+    "attention": {
+      "id": "attention",
+      "aliases": ["focus", "concentration", "awareness"],
+      "related": ["mindfulness", "presence", "observation"]
+    },
+    "fixed_point": {
+      "id": "fixed_point",
+      "aliases": ["attractor", "equilibrium", "stable_state"],
+      "related": ["convergence", "eigenstate", "invariant"]
+    }
+  },
+  "relationships": {
+    "types": [
+      "implies",
+      "contradicts",
+      "complements",
+      "transcends",
+      "contains",
+      "emerges_from",
+      "leads_to",
+      "parallels"
+    ],
+    "examples": [
+      {
+        "from": "recursion",
+        "to": "consciousness",
+        "type": "emerges_from",
+        "strength": 0.8
+      },
+      {
+        "from": "fixed_point",
+        "to": "liberation",
+        "type": "parallels",
+        "strength": 0.7
+      },
+      {
+        "from": "attention",
+        "to": "unity",
+        "type": "leads_to",
+        "strength": 0.6
+      }
+    ]
+  },
+  "concept_template": {
+    "id": "string",
+    "name": "string",
+    "definition": {
+      "jain": "string",
+      "buddhist": "string",
+      "western": "string",
+      "systems": "string"
+    },
+    "properties": [],
+    "relationships": [],
+    "practices": [],
+    "tensions": [],
+    "convergences": [],
+    "timestamp": "ISO 8601",
+    "confidence": 0.0
+  }
+}
