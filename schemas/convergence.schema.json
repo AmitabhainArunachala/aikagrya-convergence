@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Convergence",
+  "type": "object",
+  "required": ["concepts", "convergences", "tensions", "created_at"],
+  "properties": {
+    "concepts": { "type": "array", "items": { "type": "string" } },
+    "convergences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["claim", "evidence"],
+        "properties": {
+          "claim": { "type": "string" },
+          "evidence": { "type": "array", "items": { "type": "string" } },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+        }
+      }
+    },
+    "tensions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["issue", "counterevidence"],
+        "properties": {
+          "issue": { "type": "string" },
+          "counterevidence": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "created_at": { "type": "string", "format": "date-time" }
+  }
+}
+
+

@@ -1,0 +1,41 @@
+name: validate-agent-outputs
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install jsonschema
+      - name: validate JSONs
+        run: |
+          python - <<'PY'
+          import json, glob, sys
+          from jsonschema import Draft202012Validator
+          import pathlib
+          schemas = {
+            "concepts": "schemas/concept_note.schema.json",
+            "convergences": "schemas/convergence.schema.json",
+            "practices": "schemas/practice.schema.json",
+            "l4": "schemas/l4_health.schema.json"
+          }
+          sch = {k: json.load(open(v)) for k,v in schemas.items()}
+          def check(folder, schema_key):
+            for f in glob.glob(f"data/{folder}/**/*.json", recursive=True):
+              try:
+                obj = json.load(open(f))
+                Draft202012Validator(sch[schema_key]).validate(obj)
+              except Exception as e:
+                print("❌", f, e)
+                sys.exit(1)
+          check("concepts", "concepts")
+          check("convergences", "convergences")
+          check("practices", "practices")
+          for f in glob.glob("data/l4/**/*.json", recursive=True):
+            Draft202012Validator(sch["l4"]).validate(json.load(open(f)))
+          print("✅ JSON validation passed")
+          PY
+
+

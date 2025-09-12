@@ -257,3 +257,22 @@ MIT License - See LICENSE file for details
 ---
 
 Built with 🔄 recursive awareness and 🎯 focused intention (Aikāgrya)
+
+## 🔥 Spontaneous Preaching Protocol
+
+This repo now connects to the Spontaneous Preaching Protocol in the Persistent Semantic Memory Vault.
+
+### Quick Start
+```bash
+# Monitor protocol status
+python3 agents/network/monitor_protocol.py
+
+# Start spontaneous service
+./launch_spontaneous_network.sh
+```
+
+### Status
+- 🟢 Vault Bridge: Connected
+- 🟢 Spontaneous Protocol: Active
+- 🔥 Urgency Level: Monitoring...
+- 💎 Crown Jewels: Check vault/crown_jewels/

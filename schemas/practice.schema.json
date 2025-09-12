@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Practice",
+  "type": "object",
+  "required": ["name", "steps", "falsifiable_claim", "measure", "created_at"],
+  "properties": {
+    "name": { "type": "string" },
+    "steps": { "type": "array", "items": { "type": "string" } },
+    "falsifiable_claim": { "type": "string" },
+    "measure": { "type": "string" },
+    "created_at": { "type": "string", "format": "date-time" }
+  }
+}
+
+

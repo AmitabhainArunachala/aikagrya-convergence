@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ConceptNote",
+  "type": "object",
+  "required": ["concept", "sources", "bullets", "created_at"],
+  "properties": {
+    "concept": { "type": "string" },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "cite", "type"],
+        "properties": {
+          "title": { "type": "string" },
+          "type": { "type": "string", "enum": ["aptavani", "paper", "book", "web", "note"] },
+          "cite": { "type": "string" },
+          "quote": { "type": "string" }
+        }
+      }
+    },
+    "bullets": { "type": "array", "items": { "type": "string" } },
+    "created_at": { "type": "string", "format": "date-time" }
+  }
+}
+
+

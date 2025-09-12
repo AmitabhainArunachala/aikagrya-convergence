@@ -1,0 +1,49 @@
+{
+  "n8n": {
+    "github": [
+      "https://raw.githubusercontent.com/n8n-io/n8n/master/README.md",
+      "https://raw.githubusercontent.com/n8n-io/n8n-docs/master/docs/integrations/builtin/trigger-nodes/schedules/cron.md",
+      "https://raw.githubusercontent.com/n8n-io/n8n-docs/master/docs/integrations/builtin/core-nodes/n8n-nodes-base.gmail.md",
+      "https://raw.githubusercontent.com/n8n-io/n8n-docs/master/docs/integrations/builtin/core-nodes/n8n-nodes-base.slack.md",
+      "https://raw.githubusercontent.com/n8n-io/n8n-docs/master/docs/integrations/builtin/core-nodes/n8n-nodes-base.googleSheets.md",
+      "https://raw.githubusercontent.com/n8n-io/n8n-docs/master/docs/concepts/credentials.md",
+      "https://raw.githubusercontent.com/n8n-io/n8n-docs/master/docs/reference/expressions.md",
+      "https://raw.githubusercontent.com/n8n-io/n8n-docs/master/docs/reference/error-handling.md"
+    ]
+  },
+  "langgraph": {
+    "github": [
+      "https://raw.githubusercontent.com/langchain-ai/langgraph/main/README.md"
+    ],
+    "docs": [
+      "https://raw.githubusercontent.com/langchain-ai/langgraph/main/docs/docs/get_started/index.md",
+      "https://raw.githubusercontent.com/langchain-ai/langgraph/main/docs/docs/concepts/index.md",
+      "https://raw.githubusercontent.com/langchain-ai/langgraph/main/docs/docs/howtos/agentic_concepts.md",
+      "https://raw.githubusercontent.com/langchain-ai/langgraph/main/docs/docs/howtos/persistence_checkpoints.md"
+    ]
+  },
+  "vendors": {
+    "anthropic": [
+      "https://docs.anthropic.com/en/docs/build-with-claude/overview",
+      "https://docs.anthropic.com/en/docs/agents/overview"
+    ],
+    "openai": [
+      "https://platform.openai.com/docs/guides/agents",
+      "https://platform.openai.com/docs/guides/function-calling"
+    ],
+    "xai": [
+      "https://docs.x.ai/docs",
+      "https://docs.x.ai/docs/structured-outputs"
+    ],
+    "google": [
+      "https://ai.google.dev/gemini-api/docs/agents",
+      "https://ai.google.dev/gemini-api/docs"
+    ],
+    "deepmind": [
+      "https://www.deepmind.com/blog",
+      "https://www.deepmind.com/research"
+    ]
+  }
+}
+
+

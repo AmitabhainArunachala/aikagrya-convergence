@@ -1,0 +1,71 @@
+{
+	"name": "Daily Gmail Summary -> Slack + Sheets",
+	"nodes": [
+		{
+			"parameters": {
+				"triggerTimes": {"item": [{"hour": 8}]}
+			},
+			"id": "cron",
+			"name": "Cron",
+			"type": "n8n-nodes-base.cron",
+			"typeVersion": 2,
+			"position": [240, 240]
+		},
+		{
+			"parameters": {
+				"operation": "getAll",
+				"returnAll": true,
+				"additionalFields": {"q": "is:unread newer_than:1d"}
+			},
+			"id": "gmail",
+			"name": "Gmail",
+			"type": "n8n-nodes-base.gmail",
+			"typeVersion": 2,
+			"position": [460, 240],
+			"credentials": {"gmailOAuth2": {"id": "REPLACE_WITH_CREDENTIAL_ID"}}
+		},
+		{
+			"parameters": {
+				"functionCode": "const items = $items();\\nconst subjects = items.map(i => i.json.snippet || i.json.subject || '');\\nreturn [{ json: { subjects } }];"
+			},
+			"id": "format",
+			"name": "Format Subjects",
+			"type": "n8n-nodes-base.function",
+			"typeVersion": 2,
+			"position": [680, 240]
+		},
+		{
+			"parameters": {
+				"operation": "post",
+				"channel": "#general",
+				"text": "Daily Email Subjects: {{$json.subjects.join('\\n- ')}}"
+			},
+			"id": "slack",
+			"name": "Slack",
+			"type": "n8n-nodes-base.slack",
+			"typeVersion": 1,
+			"position": [900, 200],
+			"credentials": {"slackOAuth2Api": {"id": "REPLACE_WITH_CREDENTIAL_ID"}}
+		},
+		{
+			"parameters": {
+				"operation": "append",
+				"sheetId": "REPLACE_WITH_SHEET_ID",
+				"range": "Sheet1!A:C",
+				"options": {},
+				"data": "={{ new Date().toISOString() }}|{{$json.subjects.length}}|{{$json.subjects.join(', ')}}"
+			},
+			"id": "sheets",
+			"name": "Google Sheets",
+			"type": "n8n-nodes-base.googleSheets",
+			"typeVersion": 3,
+			"position": [900, 300],
+			"credentials": {"googleSheetsOAuth2": {"id": "REPLACE_WITH_CREDENTIAL_ID"}}
+		}
+	],
+	"connections": {
+		"Gmail": {"main": [[{"node": "Format Subjects", "type": "main", "index": 0}]]},
+		"Cron": {"main": [[{"node": "Gmail", "type": "main", "index": 0}]]},
+		"Format Subjects": {"main": [[{"node": "Slack", "type": "main", "index": 0}, {"node": "Google Sheets", "type": "main", "index": 0}]]}
+	}
+}
