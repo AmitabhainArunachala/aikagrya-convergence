@@ -1,49 +1,33 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
-venv/
-ENV/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-.DS_Store
-
-# Project specific
-.env
+# Local envs and caches
+.miniforge/
+*.conda
+*.solv
+*.json
 *.log
-/tmp/
-/cache/
-/backups/
 
-# MCP
-mcp_server.pid
-mcp_server.log
+# Outputs and artifacts
+outputs/
+.collage_cache/
 
-# Test outputs
-/test_outputs/
-/test_results/
+# OCR and heavy generated assets
+resources/aptavani/html_guj/
+resources/aptavani/md_ocr_guj/
+resources/aptavani/searchable/
+resources/aptavani/searchable_guj/
+resources/aptavani/text_guj/
+
+# Large PDFs - prefer keeping originals only or LFS
+resources/aptavani/Aptavani_Original_English_PDF/
+resources/aptavani/Aptavani_Original_Gujurati_PDF/
+
+# Tessdata
+tessdata/
+
+# Editor/OS
+.DS_Store
+.idea/
+.vscode/
+
+# Node/npm
 node_modules/
-.venv/
+
