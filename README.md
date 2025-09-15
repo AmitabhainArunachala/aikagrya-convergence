@@ -253,6 +253,8 @@ MIT License - See LICENSE file for details
 - [Synthesis Protocol](protocols/synthesis_protocol.md)
 - [Practice Generation](protocols/practice_generation.md)
 - [Aptavani Resources](resources/aptavani/README.md)
+- [Vault Navigation (Draft)](docs/vault_navigation.md)
+- [Spontaneous Artifact Creation](protocols/spontaneous_artifact_creation.md)
 
 ---
 
